@@ -1,8 +1,11 @@
 
 package com.couse.security.application.api.request;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public record CustomerRequest(
-        String name,
-        String email,
-        String phoneNumber) {
+                String name,
+                String email,
+                String phoneNumber) {
 }
