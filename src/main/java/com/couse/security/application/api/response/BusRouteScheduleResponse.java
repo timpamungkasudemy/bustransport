@@ -1,10 +1,12 @@
 package com.couse.security.application.api.response;
 
 import java.time.OffsetDateTime;
+import java.util.UUID;
 
 import com.couse.security.application.entity.BusRouteSchedule.BusClass;
 
 public record BusRouteScheduleResponse(
+    UUID busRouteScheduleUuid,
     BusRouteResponse busRoute,
     String code,
     String name,

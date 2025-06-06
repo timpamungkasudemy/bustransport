@@ -7,6 +7,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public record CreateBusTicketRequest(
-    UUID busRouteScheduleUuid,
-    List<CreateBusTicketPassengerRequest> passengers
-) {}
+        UUID busRouteScheduleUuid,
+        List<CreateBusTicketPassengerRequest> passengers) {
+}
